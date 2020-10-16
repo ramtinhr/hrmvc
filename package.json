@@ -1,0 +1,22 @@
+{
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "my fist php mvc framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramtinhr/hrmvc.git"
+  },
+  "keywords": [
+    "hrmvc"
+  ],
+  "author": "ramtin heydarrezaei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramtinhr/hrmvc/issues"
+  },
+  "homepage": "https://github.com/ramtinhr/hrmvc#readme"
+}
