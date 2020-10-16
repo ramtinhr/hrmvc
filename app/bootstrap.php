@@ -1,2 +1,8 @@
 <?php
-echo '<h1>ramtin heydarrezaei first php mvc framework</h1>';
+  // Load config
+  require_once 'config/config.php';
+  // Autoload core Libraries
+  spl_autoload_register(function ($className) {
+    require_once 'libraries/' . $className . '.php';
+  });
+
