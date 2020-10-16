@@ -7,7 +7,7 @@ const config = {
 };
 let jsConfig = Object.assign({}, config, {
   name: "js",
-  entry: "./public/resources/js/app.js",
+  entry: "./resources/js/app.js",
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'js/app.js'

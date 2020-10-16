@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my fist php mvc framework",
   "scripts": {
-    "watch": "node-sass --watch public/resources/scss -o public/css",
+    "watch": "node-sass --watch resources/scss -o public/css",
     "build": "webpack --config webpack.config.js",
     "webpack": "webpack --watch"
   },
