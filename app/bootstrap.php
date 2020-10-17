@@ -1,6 +1,4 @@
 <?php
-  use Symfony\Component\Dotenv\Dotenv;
-  use Whoops\Run;
 
   // Load config
   require_once 'config/config.php';
