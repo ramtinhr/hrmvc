@@ -30,6 +30,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "filp/whoops": "^2.8"
+    "filp/whoops": "^2.8",
+    "symfony/var-dumper": "^5.1"
   }
 }

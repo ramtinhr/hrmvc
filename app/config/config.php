@@ -6,8 +6,8 @@
   // Dotenv configuration
   require_once 'dotenv.php';
 
-  // Whoops prettyErrorHandler configuration
+  // Whoops prettyErrorHandler Configuration
   require_once 'whoops.php';
 
-  // Important Constants of application
+  // Important Constants Of Application
   require_once 'constants.php';

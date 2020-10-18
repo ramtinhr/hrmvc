@@ -1,4 +1,5 @@
 <?php
+
   /*
    * Instantiate from whoops class to and register it
    */

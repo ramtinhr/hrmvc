@@ -1,12 +1,18 @@
 <?php
 
 class Pages extends Controller {
+  /**
+   * @var mixed
+   */
+  private $postModel;
+
   public function __construct() {
+    // place to load model
   }
 
   public function index() {
     $data = [
-      'title' => 'welcome'
+      'title' => 'HRMVC'
     ];
     $this->view('pages/index', $data);
   }
