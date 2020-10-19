@@ -1,6 +1,13 @@
-.bg-blue {
-  background-color: blue;
-}
-.text-white {
-  color: white;
-}
+@import "./global/variables";
+@import "./global/animation";
+@import "./global/grid-variables";
+@import "./global/switch";
+@import "./global/common";
+@import "./global/container";
+@import "./global/table";
+@import "./global/back_to_up";
+@import "./global/multiselect";
+@import "./global/breadcrumb";
+@import "./global/badge";
+@import "./global/button";
+@import "./global/form";
