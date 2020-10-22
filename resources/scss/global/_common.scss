@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -10,14 +14,10 @@ html {
 }
 
 body {
-  background-color: #F2F4F4;
-  font-family:  sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
-  direction: rtl;
+  direction: ltr;
   margin: 0; //TODO: if scroll in vertical maybe for this
-}
-* {
-  font-family: sans-serif;
 }
 
 ul {

@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  & li {
+    font-size: 18px;
+    margin: auto 10px;
+    & a {
+      color: #fff;
+    }
+  }
+}

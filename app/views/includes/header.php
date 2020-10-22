@@ -9,4 +9,5 @@
     <title><?php echo APP_NAME; ?></title>
 </head>
 <body>
+<?php require APP_ROOT . '/views/includes/navbar.php' ?>
 

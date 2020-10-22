@@ -12,7 +12,8 @@ class Pages extends Controller {
 
   public function index() {
     $data = [
-      'title' => 'HRMVC'
+      'title' => 'HRMVC',
+      'description' => 'Codepowers Community First MVC Framework It Can Be More Powerful If You Help Us To Be Better'
     ];
     $this->view('pages/index', $data);
   }

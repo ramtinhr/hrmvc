@@ -28,5 +28,14 @@
     "webpack": "^5.1.3",
     "webpack-cli": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dev-server": "^0.1.0",
+    "flexboxgrid-sass": "^8.0.5",
+    "html-webpack-plugin": "^4.5.0",
+    "live-server": "^1.2.1"
+  }
 }

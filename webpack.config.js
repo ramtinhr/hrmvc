@@ -7,10 +7,13 @@ const config = {
 };
 let jsConfig = Object.assign({}, config, {
   name: "js",
-  entry: "./resources/js/app.js",
+  entry: ['babel-polyfill','./resources/js/app.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'js/app.js'
+  },
+  devServer: {
+    contentBase: './public'
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -26,7 +29,16 @@ let jsConfig = Object.assign({}, config, {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader',
       }
+      // {
+      //   test: /\.(eot|svg|ttf|woff|woff2)$/,
+      //   use: 'file-loader',
+      // }
     ]
   }
 });

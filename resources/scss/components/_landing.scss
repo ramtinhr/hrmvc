@@ -1,0 +1,38 @@
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  &__imagebox {
+    min-width: 600px;
+  }
+  &__titlebox {
+    display: flex;
+    flex-direction: column;
+    & h1 {
+      animation: fade-in 1s ease-in-out;
+    }
+    & h3 {
+      animation: left-to-right 1s ease;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
