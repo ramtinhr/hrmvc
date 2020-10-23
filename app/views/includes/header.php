@@ -10,4 +10,6 @@
 </head>
 <body>
 <?php require APP_ROOT . '/views/includes/navbar.php' ?>
+<div class="container-fluid">
+
 

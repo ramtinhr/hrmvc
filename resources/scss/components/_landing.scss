@@ -10,10 +10,10 @@
     display: flex;
     flex-direction: column;
     & h1 {
-      animation: fade-in 1s ease-in-out;
+      animation: fade-in .7s ease-in-out;
     }
     & h3 {
-      animation: left-to-right 1s ease;
+      animation: left-to-right .7s ease;
     }
   }
 }

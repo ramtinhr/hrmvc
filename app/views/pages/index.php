@@ -2,7 +2,7 @@
   <div class="landing">
     <div class="landing__titlebox col-md-4">
       <div>
-        <h1 class="font-size-50"><?php echo $data['title'] ?></h1>
+        <h1 class="font-size-50 m-t-0"><?php echo $data['title'] ?></h1>
       </div>
       <div class="line-height-35">
         <h3 class="font-size-20 m-t-0"><?php echo $data['description'] ?></h3>

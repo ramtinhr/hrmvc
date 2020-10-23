@@ -20,6 +20,10 @@ body {
   margin: 0; //TODO: if scroll in vertical maybe for this
 }
 
+* {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
 ul {
   margin: 0;
 }
@@ -337,6 +341,10 @@ button {
   color: $dimlightGray;
 }
 
+.min-h-90-vh {
+  min-height: 90vh;
+}
+
 .border-bottom-lightGreen {
   border-bottom: 3px solid $strongGreenCyan;
 }
@@ -358,7 +366,19 @@ button {
 .bg-snowGray {
   background-color: $snowGray;
 }
-
+.is-invalid {
+  border: 1px solid red;
+}
+.form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px auto;
+  & label {
+    margin: 5px 0;
+  }
+}
 .scroll-bg {
   height: 40px !important;
   min-height: 40px !important;

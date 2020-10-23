@@ -1,5 +1,5 @@
 <?php
-  /*
+  /**
    * PDO database class
    * Connect to database
    * Create prepared statements
