@@ -7,12 +7,12 @@
       <div class="form-group">
         <label for="email">Email: <sup>*</sup></label>
         <input type="email" value="<?php echo $data['email']; ?>" name="email" class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>">
-        <span class="text-danger font-size-14"><?php echo $data['errors'][0]['email']; ?></span>
+        <span class="text-danger font-size-14"><?php echo $data['errors']['email'][0]; ?></span>
       </div>
       <div class="form-group">
         <label for="password">Password: <sup>*</sup></label>
         <input type="password" value="<?php echo $data['password']; ?>" name="password" class="form-control <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>">
-        <span class="text-danger font-size-14"><?php print_r($data['errors'][0]['email']); ?></span>
+        <span class="text-danger font-size-14"><?php echo $data['errors']['password'][0]; ?></span>
       </div>
       <div class="row">
         <div class="col-xs-6">

@@ -1,10 +1,11 @@
 <?php
 
 class Users extends Controller {
+  private Request $request;
+
   public function __construct() {
-
+    $this->request = new Request();
   }
-
   /**
    * Register method
    */
@@ -21,44 +22,21 @@ class Users extends Controller {
         'name' => trim($_POST['name']),
         'email' => trim($_POST['email']),
         'password' => trim($_POST['password']),
-        'confirm_password' => trim($_POST['confirm_password']),
-        'name_err' => '',
-        'email_err' => '',
-        'password_err' => '',
-        'confirm_password_err' => ''
+        'confirm_password' => trim($_POST['confirm_password'])
       ];
 
-      // Validate Email
-      if (empty($data['email'])) {
-        $data['email_err'] = 'Please Enter Email';
-      }
+      $rules = [
+        'name' => 'required',
+        'email' => 'required',
+        'password' => 'required|min:6',
+        'confirm_password' => 'required|confirmed:password'
+      ];
 
-      // Validate Name
-      if (empty($data['name'])) {
-        $data['name_err'] = 'Please Enter Name';
-      }
-
-      // Validate Password
-      if (empty($data['password'])) {
-        $data['password_err'] = 'Please Enter Password';
-      } elseif (strlen($data['password']) < 6) {
-        $data['password_err'] = 'Password must be at least 6 characters';
-      }
-
-      // Validate Confirm Password
-      if (empty($data['confirm_password'])) {
-        $data['confirm_password_err'] = 'Please Confirm Password';
+      $this->request->validate($data, $rules);
+      if (count($this->request->errors) === 0) {
+        die('success');
       } else {
-        if ($data['password'] !== $data['confirm_password']) {
-          $data['confirm_password_err'] = 'Passwords do not match';
-        }
-      }
-
-      // Make sure errors are empty
-      if (empty($data['email_err']) && empty($data['name_err']) && empty($data['password_err']) && empty($data['confirm_password_err'])) {
-        // Validated
-        die('SUCCESS');
-      } else {
+        $data['errors'] = $this->request->errors;
         // Load view with errors
         $this->view('/users/register', $data);
       }
@@ -69,11 +47,7 @@ class Users extends Controller {
         'name' => '',
         'email' => '',
         'password' => '',
-        'confirm_password' => '',
-        'name_err' => '',
-        'email_err' => '',
-        'password_err' => '',
-        'confirm_password_err' => ''
+        'confirm_password' => ''
       ];
 
       // Load view
@@ -101,25 +75,14 @@ class Users extends Controller {
       // rules for validating $requests
       $rules = [
         'email' => 'required',
-        'password' => 'required',
+        'password' => 'required|min:3',
       ];
 
-//      // Validate Email
-//      if (empty($data['email'])) {
-//        $data['email_err'] = 'Please Enter Email';
-//      }
-//
-//      // Validate Password
-//      if (empty($data['password'])) {
-//        $data['password_err'] = 'Please Enter Password';
-//      }
-
-      // Make sure errors are empty
-      $test = new Request();
-      if ($test->validate($data, $rules)) {
+      $this->request->validate($data, $rules);
+      if (count($this->request->errors) === 0) {
         die('success');
       } else {
-        $data['errors'] = $test->errors;
+        $data['errors'] = $this->request->errors;
         $this->view('users/login', $data);
       }
 
