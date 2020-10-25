@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a81e04f9-448f-4d39-a623-d94701b4b630" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/libraries/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -90,7 +90,7 @@
       <workItem from="1603392645264" duration="8378000" />
       <workItem from="1603457316468" duration="17000" />
       <workItem from="1603457371115" duration="23484000" />
-      <workItem from="1603613029385" duration="12049000" />
+      <workItem from="1603613029385" duration="22230000" />
     </task>
     <servers />
   </component>
@@ -98,6 +98,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="256" y="386" width="1397" height="314" key="#SQL_Dialects" timestamp="1603641967067">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="256" y="386" width="1397" height="314" key="#SQL_Dialects/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603641967067" />
+    <state x="555" y="201" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603643028821">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="201" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603643028821" />
     <state x="641" y="332" width="628" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603395522195">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -143,10 +151,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="755" y="461" width="399" height="164" key="NewPhpFileDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602957169329" />
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1602873203056">
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1603641544147">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602873203056" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603641544147" />
     <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1602885180350">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -160,10 +168,10 @@
     </state>
     <state x="652" y="263" width="616" height="612" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603459867922" />
     <state x="2572" y="242" width="616" height="569" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1603134397551" />
-    <state x="673" y="306" width="563" height="474" key="refactoring.ChangeSignatureDialog" timestamp="1603629616034">
+    <state x="673" y="306" width="563" height="474" key="refactoring.ChangeSignatureDialog" timestamp="1603643192242">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="673" y="306" width="563" height="474" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603629616034" />
+    <state x="673" y="306" width="563" height="474" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603643192242" />
     <state x="624" y="245" key="run.anything.popup" timestamp="1602941044571">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

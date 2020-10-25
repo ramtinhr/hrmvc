@@ -23,6 +23,8 @@ class Request {
         $this->checkMaxLength($requests[$key], $rule[0], $key, $rule[1]);
         // check two inputs are equal
         $this->checkConfirmed($requests[$key], $requests[$rule[1]], $rule[1], $rule[0], $key);
+        // check unique to table
+        $this->checkUnique($requests[$key], $rule[1], $rule[0], $key);
       }
       // Check if there is any error
       if (count($this->errors[$key]) === 0) {
@@ -38,7 +40,7 @@ class Request {
    */
   public function checkEmptyData($input, $key) {
     if ($input === '' || !$input) {
-      array_push($this->errors[$key], 'Please Enter ' . $key);
+      array_push($this->errors[$key], 'Please Enter ' . str_replace('_', ' ', $key));
     }
   }
 
@@ -51,7 +53,7 @@ class Request {
    */
   public function checkMinLength($input, $rule, $key, $min) {
     if ($rule === 'min' && strlen($input) < $min) {
-      array_push($this->errors[$key], $key . ' must be at least ' . $min . ' character');
+      array_push($this->errors[$key],  str_replace('_', ' ', $key) . ' must be at least ' . $min . ' character');
     }
   }
 
@@ -64,7 +66,7 @@ class Request {
    */
   public function checkMaxLength($input, $rule, $key, $max) {
     if ($rule === 'max' && strlen($input) < $max) {
-      array_push($this->errors[$key], $key . ' cannot be more than ' . $max . ' character');
+      array_push($this->errors[$key],  str_replace('_', ' ', $key) . ' cannot be more than ' . $max . ' character');
     }
   }
 
@@ -74,6 +76,23 @@ class Request {
   public function checkConfirmed($input, $input2, $shouldConfirm, $rule, $key) {
     if ($rule === 'confirmed' && $input !== $input2) {
       array_push($this->errors[$key], $shouldConfirm . 's not match');
+    }
+  }
+
+  /**
+   * check for unique column of table
+   * @param $input
+   * @param $table
+   * @param $rule
+   * @param $key
+   */
+  public function checkUnique($input, $table, $rule, $key) {
+    if ($rule === 'unique') {
+      $db = new Database();
+      $db->findBy($key, $table, $input);
+      if ($db->rowCount() > 0) {
+        array_push($this->errors[$key], str_replace('_', ' ', $key) . ' is already taken');
+      }
     }
   }
 }

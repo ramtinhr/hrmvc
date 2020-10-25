@@ -2,8 +2,10 @@
 
 class Users extends Controller {
   private Request $request;
+  private $userModel;
 
   public function __construct() {
+    $this->userModel = $this->model('User');
     $this->request = new Request();
   }
   /**
@@ -24,14 +26,12 @@ class Users extends Controller {
         'password' => trim($_POST['password']),
         'confirm_password' => trim($_POST['confirm_password'])
       ];
-
       $rules = [
         'name' => 'required',
-        'email' => 'required',
+        'email' => 'required|unique:users',
         'password' => 'required|min:6',
         'confirm_password' => 'required|confirmed:password'
       ];
-
       $this->request->validate($data, $rules);
       if (count($this->request->errors) === 0) {
         die('success');

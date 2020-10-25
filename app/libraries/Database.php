@@ -1,11 +1,11 @@
 <?php
-  /**
-   * PDO database class
-   * Connect to database
-   * Create prepared statements
-   * Bind values
-   * Return rows and results
-   */
+/**
+ * PDO database class
+ * Connect to database
+ * Create prepared statements
+ * Bind values
+ * Return rows and results
+ */
 class Database {
   private $host = DB_HOST;
   private $user = DB_USER;
@@ -22,9 +22,8 @@ class Database {
     // Set DSN
     $dsn = "$this->connection:host=$this->host;dbname=$this->dbname";
     $options = [
-      PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-      PDO::ATTR_EMULATE_PREPARES   => false,
+      PDO::ATTR_PERSISTENT => true,
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ];
 
     /*
@@ -49,9 +48,9 @@ class Database {
   /*
    * Bind the values
    */
-  public function bind($param, $value, $type=null) {
-    if (is_null($type)) {
-      switch (true) {
+  public function bind($param, $value, $type = null){
+    if(is_null($type)){
+      switch(true){
         case is_int($value):
           $type = PDO::PARAM_INT;
           break;
@@ -87,6 +86,7 @@ class Database {
    * Get single record as object
    */
   public function single() {
+    $this->execute();
     return $this->stmt->fetch(PDO::FETCH_OBJ);
   }
 
@@ -94,6 +94,18 @@ class Database {
    * Get row count
    */
   public function rowCount() {
+    $this->execute();
     return $this->stmt->rowCount();
+  }
+
+  /*
+   * find the row with filter
+   */
+
+  public function findBy($param, $table, $input) {
+    $this->query('SELECT * FROM ' . $table . ' WHERE ' . $param . ' =:' . $param);
+    $this->bind(':' . $param, $input);
+    $row = $this->single();
+    return $row;
   }
 }
