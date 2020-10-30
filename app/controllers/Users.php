@@ -3,10 +3,12 @@
 class Users extends Controller {
   private Request $request;
   private $userModel;
-
+	private $db;
+	
   public function __construct() {
     $this->userModel = $this->model('User');
     $this->request = new Request();
+    $this->db = new Database();
   }
   /**
    * Register method
@@ -34,13 +36,20 @@ class Users extends Controller {
       ];
       $this->request->validate($data, $rules);
       if (count($this->request->errors) === 0) {
-        die('success');
+				// Hash password
+				$data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
+				// Register User
+				if($this->userModel->register($data)) {
+					flash('register_success', 'You are now registered and can login');
+					redirect('users/login');
+				} else {
+						die('Something went wrong');
+				}
       } else {
         $data['errors'] = $this->request->errors;
         // Load view with errors
         $this->view('/users/register', $data);
       }
-
     } else {
       // Init data
       $data = [
@@ -74,13 +83,22 @@ class Users extends Controller {
 
       // rules for validating $requests
       $rules = [
-        'email' => 'required',
+        'email' => 'required|found:users:No user found with this email',
         'password' => 'required|min:3',
       ];
-
+      
       $this->request->validate($data, $rules);
       if (count($this->request->errors) === 0) {
-        die('success');
+        //check and set logged in User
+				$loggedInUser = $this->userModel->login($data['email'], $data['password']);
+				
+				if ($loggedInUser) {
+					// Create Session
+					die('success');
+				} else {
+					$data['password_err'] = 'Password incorrect';
+					$this->view('users/login', $data);
+				}
       } else {
         $data['errors'] = $this->request->errors;
         $this->view('users/login', $data);

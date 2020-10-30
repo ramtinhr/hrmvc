@@ -367,7 +367,7 @@ button {
   background-color: $snowGray;
 }
 .is-invalid {
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
 .form-group {
   display: flex;

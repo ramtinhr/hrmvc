@@ -1,0 +1,12 @@
+.alert {
+  background-color: $lightGray;
+  padding: 10px 20px;
+  margin: auto;
+  color: $dimlightGray;
+  &-success {
+    background-color: $lightGreen;
+  }
+  &-danger {
+    background-color: $red;
+  }
+}

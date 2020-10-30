@@ -6,6 +6,7 @@
  * Bind values
  * Return rows and results
  */
+
 class Database {
   private $host = DB_HOST;
   private $user = DB_USER;
@@ -13,7 +14,7 @@ class Database {
   private $dbname = DB_NAME;
   private $port = DB_PORT;
   private $connection = DB_CONNECTION;
-
+  public $row;
   private $dbh;
   private $stmt;
   private $error;
@@ -101,11 +102,32 @@ class Database {
   /*
    * find the row with filter
    */
-
   public function findBy($param, $table, $input) {
     $this->query('SELECT * FROM ' . $table . ' WHERE ' . $param . ' =:' . $param);
     $this->bind(':' . $param, $input);
-    $row = $this->single();
-    return $row;
+    $this->row = $this->single();
+    return $this->row;
+  }
+
+  /*
+   * get properties
+   */
+  protected function properties() {
+    $properties = array();
+    foreach (static::$fillable  as $db_field) {
+      if(property_exists($this, $db_field)) {
+        $properties[$db_field] = $this->$db_field;
+      }
+    }
+    return $properties;
+  }
+
+  /*
+ * Insert data to the database and the specific table
+ */
+  public function create() {
+    $properties = $this->properties();
+    $sql = "INSERT INTO " . static::$db_table . "(" . implode(",", array_keys($properties)) . ")";
+    $sql .= "VALUES ('". implode("','", ':' . array_values($properties)) ."')";
   }
 }

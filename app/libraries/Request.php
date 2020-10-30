@@ -3,6 +3,12 @@
 class Request {
   public array $errors = [];
   public array $rules = [];
+  private $db;
+  
+  public function __construct() {
+  	$this->db = new Database();
+	}
+  
   /**
    * Validation function for empty data min and max length
    * @param $requests
@@ -15,7 +21,7 @@ class Request {
       $this->checkEmptyData($requests[$key], $key);
       // Validation rules
       $this->rules[$key] = explode('|', $rule);
-      for ($i = 0; $i <= 4; $i++) {
+      for ($i = 0; $i <= 5; $i++) {
         // Check if inputs are lower than min length rule
         $rule = explode(':', $this->rules[$key][$i]);
         $this->checkMinLength($requests[$key], $rule[0], $key, $rule[1]);
@@ -25,6 +31,8 @@ class Request {
         $this->checkConfirmed($requests[$key], $requests[$rule[1]], $rule[1], $rule[0], $key);
         // check unique to table
         $this->checkUnique($requests[$key], $rule[1], $rule[0], $key);
+        // check if any user found
+				$this->checkToFind($rule[0], $key, $requests[$key], $rule[1], $rule[2] );
       }
       // Check if there is any error
       if (count($this->errors[$key]) === 0) {
@@ -88,11 +96,22 @@ class Request {
    */
   public function checkUnique($input, $table, $rule, $key) {
     if ($rule === 'unique') {
-      $db = new Database();
-      $db->findBy($key, $table, $input);
-      if ($db->rowCount() > 0) {
+      $this->db->findBy($key, $table, $input);
+      if ($this->db->rowCount() > 0) {
         array_push($this->errors[$key], str_replace('_', ' ', $key) . ' is already taken');
       }
     }
   }
+  
+  /*
+   * Check to if any row exist with this credentials
+   */
+  public function checkToFind($rule, $key, $input, $table, $message) {
+  	if ($rule === 'found') {
+  		$this->db->findBy($key, $table, $input);
+  		if ($this->db->rowCount() === 0) {
+				array_push($this->errors[$key], $message);
+			}
+		}
+	}
 }
