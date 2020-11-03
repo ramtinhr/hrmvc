@@ -14,13 +14,11 @@
     <?php if($data['post']->user_id === $_SESSION['user_id']) : ?>
       <hr class="text-lightgray">
       <div class="row align-center justify-content-between">
-        <div class="col-md-1 m-r-20">
-          <button class="btn btn-darkBlack display-flex justify-content-center align-center">
+        <div class="col-md-1">
+          <a href="<?php echo APP_URL; ?>/posts/edit/<?php echo $data['post']->id; ?>" class="btn btn-darkBlack text-white display-flex justify-content-center align-center">
             <i class="fa fa-edit m-r-5"></i>
-            <a href="<?php echo APP_URL; ?>/posts/edit/<?php echo $data['post']->id; ?>" class="text-white">
-              Edit
-            </a>
-          </button>
+            Edit
+          </a>
         </div>
         <form action="<?php echo APP_URL; ?>/posts/delete/<?php echo $data['post']->id; ?>" method="POST">
           <button type="submit" class="btn btn-danger display-flex align-center">

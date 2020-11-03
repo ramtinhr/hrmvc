@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a81e04f9-448f-4d39-a623-d94701b4b630" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/Posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mvc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/session_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/includes/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/includes/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/global/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/global/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,12 +98,32 @@
       <workItem from="1604254255656" duration="9923000" />
       <workItem from="1604295916603" duration="4259000" />
       <workItem from="1604346799848" duration="2930000" />
-      <workItem from="1604392680608" duration="12030000" />
+      <workItem from="1604392680608" duration="12402000" />
     </task>
+    <task id="LOCAL-00001" summary="project complete">
+      <created>1604412360517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604412360517</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix">
+      <created>1604412403322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604412403322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project complete" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="256" y="386" width="1397" height="314" key="#SQL_Dialects" timestamp="1603641967067">
@@ -153,10 +150,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604298391102" />
-    <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2" timestamp="1603650149564">
+    <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2" timestamp="1604412403241">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603650149564" />
+    <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604412403241" />
     <state x="743" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604169526240">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -190,10 +187,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="491" y="343" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604084550930" />
-    <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1602885180350">
+    <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1604412404559">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602885180350" />
+    <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604412404559" />
     <state x="483" y="136" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604299847528">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
