@@ -3,12 +3,10 @@
 class Users extends Controller {
   private Request $request;
   private $userModel;
-	private $db;
 	
   public function __construct() {
     $this->userModel = $this->model('User');
     $this->request = new Request();
-    $this->db = new Database();
   }
   /**
    * Register method
@@ -94,7 +92,7 @@ class Users extends Controller {
 				
 				if ($loggedInUser) {
 					// Create Session
-					die('success');
+					$this->createUserSession($loggedInUser);
 				} else {
 					$data['password_err'] = 'Password incorrect';
 					$this->view('users/login', $data);
@@ -117,5 +115,22 @@ class Users extends Controller {
       $this->view('users/login', $data);
     }
   }
-
+	public function createUserSession($user) {
+  	$_SESSION['user_id'] = $user->id;
+  	$_SESSION['user_email'] = $user->email;
+  	$_SESSION['user_name'] = $user->name;
+  	redirect('posts');
+	}
+	
+	/*
+	 * logout function
+	 */
+	public function logout() {
+		unset($_SESSION['user_id']);
+		unset($_SESSION['user_email']);
+		unset($_SESSION['user_name']);
+		session_destroy();
+		redirect('users/login');
+	}
+	
 }

@@ -11,6 +11,9 @@ class Pages extends Controller {
   }
 
   public function index() {
+  	if (isLoggedIn()) {
+  		redirect('posts');
+		}
     $data = [
       'title' => 'HRMVC',
       'description' => 'Codepowers Community First MVC Framework It Can Be More Powerful If You Help Us To Be Better'

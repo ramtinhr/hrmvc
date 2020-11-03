@@ -5,21 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a81e04f9-448f-4d39-a623-d94701b4b630" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/url_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/scss/global/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/Posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/posts/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mvc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Pages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/session_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/libraries/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Request.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/includes/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/includes/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/global/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/global/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/global/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/global/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +66,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../shetab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,20 +74,21 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/scss" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/scss" />
       <recent name="$PROJECT_DIR$/docker" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/public/resource" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,7 +113,15 @@
       <workItem from="1603457371115" duration="23484000" />
       <workItem from="1603613029385" duration="25818000" />
       <workItem from="1603994389439" duration="2074000" />
-      <workItem from="1604070221685" duration="11459000" />
+      <workItem from="1604070221685" duration="12291000" />
+      <workItem from="1604164083048" duration="11414000" />
+      <workItem from="1604209684856" duration="2457000" />
+      <workItem from="1604212248821" duration="1893000" />
+      <workItem from="1604214197781" duration="1206000" />
+      <workItem from="1604254255656" duration="9923000" />
+      <workItem from="1604295916603" duration="4259000" />
+      <workItem from="1604346799848" duration="2930000" />
+      <workItem from="1604392680608" duration="12030000" />
     </task>
     <servers />
   </component>
@@ -118,47 +137,51 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="201" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603643028821" />
-    <state x="641" y="332" width="628" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603395522195">
+    <state x="641" y="332" width="654" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604176923977">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="641" y="332" width="628" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603395522195" />
+    <state x="641" y="332" width="654" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604176923977" />
+    <state x="745" y="211" width="429" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1604398718201">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="745" y="211" width="429" height="664" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604398718201" />
     <state x="773" y="339" width="355" height="416" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603463473002">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="773" y="339" width="355" height="416" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603463473002" />
-    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603388940282">
+    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604298391102">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603388940282" />
+    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604298391102" />
     <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2" timestamp="1603650149564">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="499" y="17" width="912" height="1052" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603650149564" />
-    <state x="743" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604071179288">
+    <state x="743" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604169526240">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="298" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604071179288" />
+    <state x="743" y="298" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604169526240" />
     <state x="2663" y="278" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1603086008086" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1602871827328">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1604178486412">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602871827328" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1602871827328">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604178486412" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1604178486412">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602871827328" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1602871827328">
+    <state width="1874" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604178486412" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1604178486412">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602871827328" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1602871827328">
+    <state width="1874" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604178486412" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1604178486412">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602871827328" />
-    <state x="671" y="243" width="567" height="600" key="NewPhpClassDialog" timestamp="1602957176240">
+    <state width="1874" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604178486412" />
+    <state x="671" y="243" width="567" height="600" key="NewPhpClassDialog" timestamp="1604170753353">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="671" y="243" width="567" height="600" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602957176240" />
+    <state x="671" y="243" width="567" height="600" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604170753353" />
     <state x="755" y="461" width="399" height="164" key="NewPhpFileDialog" timestamp="1602957169329">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -171,14 +194,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602885180350" />
+    <state x="483" y="136" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604299847528">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="483" y="136" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604299847528" />
     <state x="679" y="332" width="552" height="423" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1603467844665">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="679" y="332" width="552" height="423" key="com.jetbrains.php.test.PhpNewTestDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603467844665" />
-    <state x="652" y="263" width="616" height="612" key="find.popup" timestamp="1603654905967">
+    <state x="652" y="263" width="616" height="612" key="find.popup" timestamp="1604210019057">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="652" y="263" width="616" height="612" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603654905967" />
+    <state x="652" y="263" width="616" height="612" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604210019057" />
     <state x="2572" y="242" width="616" height="569" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1603134397551" />
     <state x="673" y="306" width="563" height="474" key="refactoring.ChangeSignatureDialog" timestamp="1603643192242">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -188,13 +215,13 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="624" y="245" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1602941044571" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1604091028754">
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1604348848259">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604091028754" />
-    <state x="685" y="447" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603473949352">
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604348848259" />
+    <state x="685" y="447" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604348812370">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="685" y="447" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1603473949352" />
+    <state x="685" y="447" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1604348812370" />
   </component>
 </project>

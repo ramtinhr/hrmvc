@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
 html {
   margin: 0;
   padding: 0;
@@ -18,10 +17,6 @@ body {
   padding: 0;
   direction: ltr;
   margin: 0; //TODO: if scroll in vertical maybe for this
-}
-
-* {
-  font-family: 'Open Sans', sans-serif !important;
 }
 
 ul {
@@ -149,7 +144,9 @@ button {
 .border-left-vermillion {
   border-left: 1px solid $vermillion;
 }
-
+.border-gray {
+  border: 1px solid $lightGray;
+}
 .bottom-unset {
   bottom: unset !important;
 }
@@ -501,7 +498,10 @@ select:-webkit-autofill:focus {
   margin: 0;
   padding: 0;
 }
-
+.m-h-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
 .disable
 {
   *{

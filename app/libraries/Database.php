@@ -108,7 +108,16 @@ class Database {
     $this->row = $this->single();
     return $this->row;
   }
-
+	
+  /*
+   * find All
+   */
+  public function finaAll($table) {
+		$this->query('SELECT * FROM ' . $table);
+		return $this->all();
+	}
+	
+	
   /*
    * get properties
    */

@@ -3,12 +3,7 @@
 class Request {
   public array $errors = [];
   public array $rules = [];
-  private $db;
-  
-  public function __construct() {
-  	$this->db = new Database();
-	}
-  
+
   /**
    * Validation function for empty data min and max length
    * @param $requests
@@ -96,8 +91,9 @@ class Request {
    */
   public function checkUnique($input, $table, $rule, $key) {
     if ($rule === 'unique') {
-      $this->db->findBy($key, $table, $input);
-      if ($this->db->rowCount() > 0) {
+    	global $db;
+      $db->findBy($key, $table, $input);
+      if ($db->rowCount() > 0) {
         array_push($this->errors[$key], str_replace('_', ' ', $key) . ' is already taken');
       }
     }
@@ -108,8 +104,9 @@ class Request {
    */
   public function checkToFind($rule, $key, $input, $table, $message) {
   	if ($rule === 'found') {
-  		$this->db->findBy($key, $table, $input);
-  		if ($this->db->rowCount() === 0) {
+  		global $db;
+  		$db->findBy($key, $table, $input);
+  		if ($db->rowCount() === 0) {
 				array_push($this->errors[$key], $message);
 			}
 		}

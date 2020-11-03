@@ -17,9 +17,20 @@
 				$_SESSION[$name . '_class'] = $class;
 			} elseif (empty($message) && !empty($_SESSION[$name])) {
 				$class = !empty($_SESSION[$name . '_class']) ? $_SESSION[$name . '_class'] : '';
-				echo '<div class="'.$class.'" id="msg-flash">'.$_SESSION[$name].'</div>';
+				echo '<div class="'.$class.'" id="msg-flash border-radius-6">'.$_SESSION[$name].'</div>';
 				unset($_SESSION[$name]);
 				unset($_SESSION[$name . '_class']);
 			}
 		}
 	}
+
+/*
+* check if user is loggedin
+*/
+function isLoggedIn() {
+	if (isset($_SESSION['user_id'])) {
+		return true;
+	} else {
+		return false;
+	}
+}
